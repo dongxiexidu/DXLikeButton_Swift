@@ -17,4 +17,4 @@ likeBtn.type = .firework
 likeBtn.center = view.center
 view.addSubview(likeBtn)
 ```
-[Objective-C版本](https://github.com/ImKcat/CatZanButton)
+参考了:[Objective-C版本](https://github.com/ImKcat/CatZanButton)
