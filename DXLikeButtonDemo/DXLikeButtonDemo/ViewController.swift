@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let frame = CGRect.init(x: 0, y: 0, width: 40, height: 40)
        // let likeBtn = DXLikeButton.init(frame: frame, zanImage: nil, unZanImage: nil)
+        let frame = CGRect.init(x: 0, y: 0, width: 40, height: 40)
         let likeBtn = DXLikeButton.init(frame: frame)
         likeBtn.type = .firework
         likeBtn.center = view.center

@@ -69,18 +69,29 @@ class DXLikeButton: UIControl {
             effectLayer.frame = CGRect.init(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
             self.layer.addSublayer(effectLayer)
             
+            // 发射器形状
             effectLayer.emitterShape = kCAEmitterLayerCircle
+            // 从发射器的轮廓发射粒子
             effectLayer.emitterMode = kCAEmitterLayerOutline
+            // 发射位置
             effectLayer.position = CGPoint.init(x: self.frame.width/2, y: self.frame.height/2)
+            // 发射器大小
             effectLayer.emitterSize = CGSize.init(width: self.frame.width, height: self.frame.height)
             
+            // 发射的粒子
             effectCell.name = "zanShape"
+            // 粒子显示的内容，设置CGImage，显示图片
             effectCell.contents = UIImage.init(named: "EffectImage")?.cgImage
+            // 粒子透明度每秒减小1，粒子逐渐变透明
             effectCell.alphaSpeed = -1
+            // 粒子寿命，单位是秒
             effectCell.lifetime = 1
+            // 粒子生成速率，单位是个/秒，实际显示效果要乘以CAEmitterLayer的birthRate
             effectCell.birthRate = 0
+            // 粒子速度
             effectCell.velocity = 50
             effectCell.velocityRange = 50
+            // 图层要发射1种粒子
             effectLayer.emitterCells = [effectCell]
             
             likeImageView.frame = CGRect.init(x: 0, y: 0, width: frame.width, height: frame.height)
