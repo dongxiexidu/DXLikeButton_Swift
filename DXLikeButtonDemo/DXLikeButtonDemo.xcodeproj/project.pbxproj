@@ -16,6 +16,7 @@
 		1154B57D212C158D00E15C3D /* EffectImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1154B57A212C158C00E15C3D /* EffectImage.png */; };
 		1154B57E212C158D00E15C3D /* Zan.png in Resources */ = {isa = PBXBuildFile; fileRef = 1154B57B212C158C00E15C3D /* Zan.png */; };
 		1154B57F212C158D00E15C3D /* UnZan.png in Resources */ = {isa = PBXBuildFile; fileRef = 1154B57C212C158C00E15C3D /* UnZan.png */; };
+		1154B584212C477F00E15C3D /* DXFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154B583212C477F00E15C3D /* DXFavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1154B57A212C158C00E15C3D /* EffectImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EffectImage.png; sourceTree = "<group>"; };
 		1154B57B212C158C00E15C3D /* Zan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zan.png; sourceTree = "<group>"; };
 		1154B57C212C158C00E15C3D /* UnZan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnZan.png; sourceTree = "<group>"; };
+		1154B583212C477F00E15C3D /* DXFavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXFavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				1154B577212C154C00E15C3D /* Source */,
+				1154B580212C475E00E15C3D /* DXFavoriteButton */,
 				1154B565212C152200E15C3D /* AppDelegate.swift */,
 				1154B567212C152200E15C3D /* ViewController.swift */,
 				1154B569212C152200E15C3D /* Main.storyboard */,
@@ -83,6 +86,15 @@
 			);
 			name = Source;
 			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		1154B580212C475E00E15C3D /* DXFavoriteButton */ = {
+			isa = PBXGroup;
+			children = (
+				1154B583212C477F00E15C3D /* DXFavoriteButton.swift */,
+			);
+			name = DXFavoriteButton;
+			path = ../../DXFavoriteButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1154B568212C152200E15C3D /* ViewController.swift in Sources */,
+				1154B584212C477F00E15C3D /* DXFavoriteButton.swift in Sources */,
 				1154B579212C157900E15C3D /* DXLikeButton.swift in Sources */,
 				1154B566212C152200E15C3D /* AppDelegate.swift in Sources */,
 			);

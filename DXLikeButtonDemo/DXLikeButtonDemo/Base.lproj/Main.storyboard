@@ -17,12 +17,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPI-0u-Vv0" customClass="DXFavoriteButton" customModule="DXLikeButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="165" y="579" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="6NG-tm-Eds"/>
+                                    <constraint firstAttribute="height" constant="44" id="KcB-bt-Nom"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="heart"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="favoriteButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c0r-LX-ebZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pPI-0u-Vv0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KdE-wb-Ia7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pPI-0u-Vv0" secondAttribute="bottom" constant="44" id="czh-eG-bRW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="favoriteButton" destination="pPI-0u-Vv0" id="7du-hj-3Ns"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-376.80000000000001" y="102.09895052473765"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart" width="128" height="128"/>
+    </resources>
 </document>
