@@ -18,6 +18,7 @@ likeBtn.type = .firework
 likeBtn.center = view.center
 view.addSubview(likeBtn)
 ```
+
 ![Objective-C版本CatZanButton](https://github.com/ImKcat/CatZanButton)
 
 # DXFavoriteButton
@@ -50,3 +51,4 @@ view.addSubview(starButton)
 参考:
 [DOFavoriteButton](https://github.com/okmr-d/DOFavoriteButton)
 [Objective-C 版本](https://github.com/Sunnyyoung/SYFavoriteButton)
+
