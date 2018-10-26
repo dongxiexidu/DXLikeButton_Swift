@@ -16,15 +16,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
 
-//        let frame = CGRect.init(x: 0, y: 0, width: 40, height: 40)
-//        let likeBtn = DXLikeButton.init(frame: frame)
-//        likeBtn.type = .firework
-//        likeBtn.center = view.center
-//        view.addSubview(likeBtn)
-//        
-//        likeBtn.clickHandler = { btn in
-//            print(btn.isLike)
-//        }
+        let frame = CGRect.init(x: 100, y: 200, width: 40, height: 40)
+        let likeBtn = DXLikeButton.init(frame: frame)
+        likeBtn.type = .firework
+      //  likeBtn.center = view.center
+        view.addSubview(likeBtn)
+        
+        likeBtn.clickHandler = { btn in
+            print(btn.isLike)
+        }
         
         
         let width = (self.view.frame.width - 44) / 4

@@ -70,9 +70,9 @@ class DXLikeButton: UIControl {
             self.layer.addSublayer(effectLayer)
             
             // 发射器形状
-            effectLayer.emitterShape = kCAEmitterLayerCircle
+            effectLayer.emitterShape = CAEmitterLayerEmitterShape.circle
             // 从发射器的轮廓发射粒子
-            effectLayer.emitterMode = kCAEmitterLayerOutline
+            effectLayer.emitterMode = CAEmitterLayerEmitterMode.outline
             // 发射位置
             effectLayer.position = CGPoint.init(x: self.frame.width/2, y: self.frame.height/2)
             // 发射器大小
@@ -125,7 +125,7 @@ class DXLikeButton: UIControl {
                     effectLayerAnimation.fromValue = NSNumber.init(value: 100)
                     effectLayerAnimation.toValue = NSNumber.init(value: 0)
                     effectLayerAnimation.duration = 0
-                    effectLayerAnimation.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseOut)
+                    effectLayerAnimation.timingFunction = CAMediaTimingFunction.init(name: CAMediaTimingFunctionName.easeOut)
                     self.effectLayer.add(effectLayerAnimation, forKey: "ZanCount")
                 }
             }, completion: nil)

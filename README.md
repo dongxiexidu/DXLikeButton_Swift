@@ -19,7 +19,7 @@ likeBtn.center = view.center
 view.addSubview(likeBtn)
 ```
 
-![Objective-C版本CatZanButton](https://github.com/ImKcat/CatZanButton)
+![Objective-C版本](https://github.com/ImKcat/CatZanButton)
 
 # DXFavoriteButton
 

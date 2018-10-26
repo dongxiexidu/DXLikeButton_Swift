@@ -191,7 +191,7 @@ open class DXFavoriteButton: UIButton {
         circleMask = CAShapeLayer()
         circleMask.bounds = imageFrame;
         circleMask.position = imgCenterPoint
-        circleMask.fillRule = kCAFillRuleEvenOdd
+        circleMask.fillRule = CAShapeLayerFillRule.evenOdd
         circleShape.mask = circleMask
         
         let maskPath = UIBezierPath.init(rect: imageFrame)
@@ -219,8 +219,8 @@ open class DXFavoriteButton: UIButton {
                 return path
             }()
 
-            line.lineCap = kCALineCapRound
-            line.lineJoin = kCALineJoinRound
+            line.lineCap = CAShapeLayerLineCap.round
+            line.lineJoin = CAShapeLayerLineJoin.round
             line.strokeStart = 0
             line.strokeEnd = 0
             line.opacity = 0
